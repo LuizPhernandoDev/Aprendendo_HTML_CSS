@@ -9,6 +9,9 @@
     <h1>Links na mesma pagina</h1>
     <p>Ir para a <a href="#secao-sobre">seção Sobre Nós</a></p>
 
+    <h1>Links na mesma pagina</h1>
+    <p>Ir para a <a href="#secao-sobre2">seção Sobre Nós</a></p>
+
     <h1>Usando links externos</h1>
     <p>Você pode acessar uma <a href="https://www.geogebra.org/classic?lang=pt_PT" target="_blank" rel="external" hreflang="pt-br">calculadora de funções</a></p>
     <!--O parametro 'href' é usada para indicar o caminho que o navegador deve fazer-->
@@ -24,7 +27,8 @@
     <!--prev: indica que o link é para a parte anterior do documento atual-->
     <!--author: indica que é um link para o site do autor do artigo atual-->
     <!--external: indica que é um link para outro site que não faz parte do site atual-->
-    <!--nofollow indica que é um link para um site não endossado, como um link pago-->
+    <!--nofollow: indica que é um link para um site não endossado, como um link pago-->
+    <!--noopener: é um atributo de segurança que impede que uma página aberta em uma nova aba tenha acesso ao objeto de janela do site original-->
 
     <!--O parametro 'hreflang' é usada para indicar o idioma padão(portugues Brasil)-->
 
@@ -47,9 +51,31 @@
     <h1>Link para telefone</h1>
     <p>Ligar para: <a href="tel:+5511999999999">(11) 99999-9999</a></p>
 
+    <h1>Link para sms</h1>
+    <p>Enviar sms: <a href="sms:+5511999999999">(11) 99999-9999</a></p>
+
+    <h1>Link para WhatsApp</h1>
+    <p>Enviar whatts: <a href="https://wa.me/5562999999999">(11) 99999-9999</a></p>
+    
+    <h1>Link para localização</h1>
+    <p>Ver localização: <a href="https://maps.app.goo.gl/unVxcYiH4Bt4KHeH6" target="_blank" rel="noopener">UEG</a></p>
+    
+    <h1>Link para imagens</h1>
+    
+    <a href="https://i0.wp.com/ftlsofts.com.br/wp-content/uploads/2023/01/logo-javascript.png?fit=260%2C380&ssl=1">
+        <img src="https://i0.wp.com/ftlsofts.com.br/wp-content/uploads/2023/01/logo-javascript.png?fit=260%2C380&ssl=1" alt="Logo JavaScript">
+    </a>
+
     <div id="secao-sobre">
         <h2>Sobre Nós</h2>
         <p>Esta é a seção que explica a história da empresa.</p>
     </div>
+    <!--generico div: não possui nenhum significado especial e serve apenas como um bloco genérico-->
+    <section id="secao-sobre2">
+    <h2>Sobre Nós</h2>
+        <p>Esta é a seção que explica a história da empresa.</p>
+    </section>
+    <!--significativo section: indica explicitamente que aquele bloco de código agrupa um conteúdo temático e relacionado-->
+
 </body>
 </html>

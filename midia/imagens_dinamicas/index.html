@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplismente aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="imagem flexível">
+    </picture>
+    <!--picture: elemento contêiner usado para fornecer múltiplas opções de arquivos de imagem -->
+    <!--source: especifica múltiplos recursos de mídia para elementos de áudio, vídeo ou imagem.-->
+    <!--midia: funcionana como condição: o navegador lê a regra e só aplica ou carrega o recurso se a condição for verdadeira-->
+        <!--screen: Alvo principal (telas de computadores, smartphones, tablets)-->
+        <!--print: Alvo de impressoras ou visualizações de impressão-->
+        <!--(max-width: Xpx): Aplica a regra se a largura da tela for no máximo X pixels-->
+        <!--(min-width: Xpx): Aplica a regra se a largura da tela for no mínimo X pixels-->
+        <!--(orientation: portrait): Aplica se a tela estiver no modo vertical (em pé)-->
+        <!--(orientation: landscape): Aplica se a tela estiver no modo horizontal (deitada)-->
+        <!--pode combinar operadores lógicos como and (e), not (não) e vírgulas (que funcionam como "ou")-->
+    <!--type: indica ao navegador que tipo de arquivo está sendo baixado, lista de media types: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+    <br>
+
+    <img src="foto-pequena.jpg" 
+        srcset="imagens/imagem_p.png 300w,
+                imagens/imagem_m.png 700w,
+                imagens/imagem_g.png 1000w"
+        sizes="(max-width: 600px) 100vw, 50vw"
+        alt="imagem flexível">
+    <!--srcset: passa uma lista de diferentes arquivos de imagem para o navegador, junto com informações sobre o tamanho de cada um-->
+    <!--sizes: para dizer ao navegador quanto espaço essa imagem vai ocupar na tela(100vw = 100% da tela)-->
+        <!--Se a tela tiver até 600px, a imagem vai ocupar 100% da largura da tela (100vw). Se a tela for maior que isso, ela vai ocupar metade da tela (50vw)-->
+        <!--O navegador faz a matemática de resolução sozinho e faz o download de apenas uma imagem (a mais leve que mantenha a nitidez)-->
+    <br>
+
+    <!-- demostraçõa -->
+    <img src="logo.jpg" 
+        srcset="logo.jpg 1x,
+                logo-hd.jpg 2x,
+                logo-ultra.jpg 3x" 
+        alt="Logotipo da empresa">
+        <!--Se for uma tela comum, ele baixa o logo.jpg.-->
+        <!--Se for uma tela Retina/HD (2x mais densidade), ele baixa automaticamente o logo-hd.jpg.-->
+</body>
+</html>

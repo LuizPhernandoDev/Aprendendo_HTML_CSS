@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproduzindo audio</title>
+</head>
+<body>
+    <h1>Reproduzindo áudios</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <audio src="audios/I'm Giving Up - Everet Almond.mp3" autoplay controls></audio>
+    <!--Funciona, mas não em todos os navegadores-->
+    <br>
+
+    <audio preload="auto" autoplay controls loop> 
+        <source src="audios/I'm Giving Up - Everet Almond.mp3" type="audio/mpeg">
+        <source src="audios/I'm Giving Up - Everet Almond.ogg" type="audio/ogg">
+        <source src="audios/I'm Giving Up - Everet Almond.wav" type="audio/wav">
+        <p>Infelismente seu navegador não consegue reproduzir esse áudio. <a href="audios/I'm Giving Up - Everet Almond.zip" download="I'm Giving Up - Everet Almond.zip" type="audio/mpeg">clique aqui</a> para baixar o áudio.</p>
+    </audio>
+    <!--audio: insere um arquivo de som em uma página-->
+        <!--controls: Exibe os botões de reprodução, pausa e volume na tela-->
+        <!--autoplay: Tenta iniciar a reprodução automaticamente assim que a página é carregada (geralmente bloqueado por navegadores se houver som)-->
+        <!--loop: Reinicia o áudio automaticamente assim que ele chega ao fim-->
+        <!--muted: Inicia o arquivo de áudio com o som silenciado-->
+        <!--preload indica o que será carregado do site -->
+            <!--auto: o site so iniciará qundo o arquivo for carregado-->
+            <!--metadada: carregará informações basicas do arquivo-->
+            <!--none: só carregará quando o usuario quiser-->
+</body>
+</html>

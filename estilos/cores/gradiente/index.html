@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes</title>
+    <style>
+        *{ /*configurações goblais das CSS*/
+            height: 100%;
+        }
+        body{
+            background-image: linear-gradient(90deg, blue 0%, green 70%, yellow 100%);
+            background-attachment: fixed;
+        }
+        h1{
+            background: linear-gradient(to bottom, white , blue);
+        }
+        /*
+        background-image:
+            linear-gradient: Transição ao longo de uma linha reta
+                pode ser usado 'to':
+                    to right: da esquerda para a direita
+                    to left: da direita para a esquerda
+                    to top: de baixo para cima
+                    to bottom: de cima para baixo
+                    to bottom right: do canto superior esquerdo para o canto inferior direito 
+                pode ser usado 'deg':
+                    0deg: de baixo para cima
+                    90deg: da esquerda para a direita
+                    180deg: de cima para baixo (padrão)
+
+            radial-gradient: Transição do centro para fora (circle/ellipse)
+                pode ser definida a direção com um 'at' (at center, at top left, at 50% 50%)
+
+            conic-gradient: Transição rotacional ao redor de um ponto
+            
+            repeating-linear-gradient: Repete o padrão definido
+        */
+        
+        /*
+        pode ser feita com n cores e especifiar de onde começa e termina uma com o %
+        obs: definir assim "background: linear-gradient(to right, #000 50%, #fff 50%);" indica que nao terá gradiente 
+        */
+
+        /*
+        background-attachment: 
+            scroll: A imagem de fundo fica fixa em relação ao próprio elemento, mas rola junto com o conteúdo da página inteira
+            fixed: A imagem de fundo fica fixa em relação à janela de visualização (viewport). Mesmo que a página seja rolada, a imagem não se move, criando um efeito estilo "paralaxe"
+            local: A imagem de fundo fica fixa em relação ao conteúdo interno do elemento. Se o elemento tiver a sua própria barra de rolagem (overflow: scroll), o fundo rola junto com o texto/conteúdo dentro dele
+        */
+    </style>
+</head>
+<body>
+    <h1>Testando gradientes</h1>
+</body>
+</html>

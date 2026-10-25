@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes baixadas</title>
+    <style>
+        /* disponivel em https://www.dafont.com/ */
+        @font-face {
+            font-family: 'Avenger';
+            src: url('fontes/gunplay rg.otf') format('opentype'), url('fonte/gunplay 3d.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format():
+            woff2: Web Open Font Format 2. É o formato padrão atual da web. Possui a melhor compressão de dados (arquivos menores) e é suportado por praticamente todos os navegadores modernos
+
+            woff: Web Open Font Format 1. Antecessor do WOFF2. Ainda amplamente suportado, mas gera arquivos ligeiramente maiores. É usado como plano de fundo (fallback) para navegadores um pouco mais antigos
+
+            truetype: TrueType Font (TTF). Formato tradicional de fontes para sistemas operacionais. Embora funcione na web, não é otimizado para compressão web como o WOFF2
+
+            opentype: OpenType Font (OTF). Evolução do TTF desenvolvida pela Microsoft e Adobe. Também funciona na web, mas costuma ser mantido como fallback
+
+            embedded-opentype (.eot): Antigo formato exclusivo do Internet Explorer (IE6 ao IE11).
+
+            svg: Formato antigo baseado em SVG, usado no Safari antigo para iOS.
+
+            truetype.att: Trata-se de uma extensão do formato TrueType (.ttf) desenvolvida pela Apple para gerenciar recursos tipográficos complexos diretamente dentro das tabelas do arquivo da fonte (como ligaduras sofisticadas, kerning dinâmico e variações de estilo avançadas)
+            */
+        }
+        body{
+            font-family: 'Geist Pixel', sans-serif;
+            font-size: 16px;
+            color: black;
+        }
+
+        h1{
+            font-family: 'Avenger', sans-serif;
+            font-size: 57px;
+            font-weight: normal;
+            font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi consequuntur magni obcaecati voluptatibus, fuga repellendus amet sit assumenda ad sapiente. Placeat cupiditate suscipit numquam velit non ea, totam nemo cum!</p>
+</body>
+</html>

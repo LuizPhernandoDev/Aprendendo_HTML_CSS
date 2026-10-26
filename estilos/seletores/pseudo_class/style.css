@@ -1,0 +1,97 @@
+@charset "UTF-8";
+h1{
+    background-color: lightgrey;
+    text-align: center;
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+}
+h1:hover{
+    background-color: yellow;
+}
+/* uma pseudo-class deve estar relacionado a um elemento, class ou id*/
+/*
+1. Pseudo-classes de Estado de Intervenção / Usuário
+:hover — O cursor do mouse está sobre o elemento
+:active — O elemento está sendo ativado/clicado no momento
+:focus — O elemento recebeu o foco (via teclado ou clique)
+:focus-within — O próprio elemento ou algum de seus filhos está em foco
+:focus-visible — O elemento está em foco e o navegador indica que o foco deve ser visível (ex: navegação por teclado)
+
+2. Pseudo-classes de Links e Localização
+:link — Um link (<a>) que ainda não foi visitado pelo usuário
+:visited — Um link (<a>) que já foi visitado
+:target — Um elemento cujo id corresponde ao fragmento da URL atual (ex: #secao1)
+:any-link — Corresponde a qualquer elemento que seja um link (:link ou :visited)
+
+3. Pseudo-classes de Formulários e Estados de UI (Interface)
+:enabled — Elemento de formulário habilitado/ativo
+:disabled — Elemento de formulário desabilitado
+:checked — Elemento de input do tipo checkbox ou radio marcado
+:indeterminate — Input em um estado intermediário ou indefinido
+:required — Campo de formulário obrigatório (required)
+:optional — Campo de formulário opcional
+:valid — Campo com valor válido conforme as regras de validação
+:invalid — Campo com valor inválido
+:user-valid / :user-invalid — Válido ou inválido após o usuário interagir com o campo
+:in-range / :out-of-range — Para inputs numéricos cujo valor está dentro ou fora dos limites (min/max)
+:placeholder-shown — Um input que está exibindo o texto de placeholder
+:read-only / :read-write — Elementos somente leitura ou editáveis
+
+4. Pseudo-classes Estruturais (Baseadas na Árvore do DOM)
+:first-child — O primeiro elemento filho do seu elemento pai
+:last-child — O último elemento filho do seu elemento pai
+:only-child — O único elemento filho do seu elemento pai
+:first-of-type — O primeiro elemento do seu tipo específico entre os irmãos
+:last-of-type — O último elemento do seu tipo específico entre os irmãos
+:only-of-type — O único elemento daquele tipo entre os irmãos
+:nth-child(n) — O enésimo filho do pai (aceita números, odd, even ou fórmulas como 2n+1)
+:nth-last-child(n) — O enésimo filho do pai, contando de trás para frente
+:nth-of-type(n) — O enésimo elemento daquele tipo específico
+:nth-last-of-type(n) — O enésimo elemento daquele tipo, contando de trás para frente
+:empty — Elemento que não possui nenhum filho (nem mesmo nós de texto)
+:root — Representa o elemento raiz do documento (geralmente a tag <html>)
+
+5. Pseudo-classes Funcionais e Lógicas
+:not(seletor) — Negação; seleciona elementos que não correspondem ao seletor passado
+:is(lista-de-seletores) — Simplifica a escrita combinando vários seletores com a mesma especificidade do mais forte entre eles
+:where(lista-de-seletores) — Idêntico ao :is(), mas sempre com especificidade zero
+:has(seletor-relativo) — O chamado "seletor de pai"; seleciona um elemento se ele contiver ou se relacionar com o seletor interno
+
+6. Outras Categorias Específicas
+Linguísticas: :lang() (seleciona com base no idioma, ex: :lang(pt)), :dir() (direção do texto: ltr ou rtl)
+Shadow DOM: :host, :host(), :host-context(), :slotted()
+Visão de Transição / Mídia: :fullscreen, :modal, :popover-open
+*/
+
+/*
+border: explicar dps 
+height: explicar dps
+widht: explicar dps
+Principais valores da propriedade display
+block (Bloco)
+• Comportamento: Ocupa 100% da largura disponível da linha e sempre começa em uma nova linha.
+• Exemplos de tags padrão: <div>, <p>, <h1> a <h6>, <header>, <footer>, <ul>.
+• Particularidades: Permite definir larguras (width) e alturas (height) explicitamente.
+
+inline (Em linha)
+• Comportamento: Ocupa apenas o espaço necessário para o seu conteúdo e fica posicionado lado a lado com outros elementos inline.
+• Exemplos de tags padrão: <span>, <a>, <img>, <strong>, <em>.
+• Particularidades: Não aceita a definição de width ou height, e as margens verticais (margin-top e margin-bottom) não funcionam como esperado.
+inline-block
+• Comportamento: Fica em linha (lado a lado com outros elementos), mas permite definir width, height e espaçamentos (margins e paddings) como um elemento em bloco.
+
+4. none
+• Comportamento: O elemento é completamente removido da tela e da árvore de acessibilidade (fica invisível e ignorado por leitores de tela).
+• Diferença: É diferente de visibility: hidden, que apenas oculta o elemento, mas mantém o espaço ocupado por ele na página.
+
+5. flex (Flexbox)
+• Comportamento: Transforma o elemento em um contêiner flexível, permitindo alinhar, distribuir e dimensionar itens facilmente em uma única direção (linha ou coluna).
+
+6. grid (Grid Layout)
+• Comportamento: Transforma o elemento em um contêiner de grade bidimensional (linhas e colunas), ideal para layouts de página complexos.
+
+7. contents
+• Comportamento: Faz com que a caixa do próprio elemento desapareça, fazendo com que os filhos diretos dele passem a se comportar como se estivessem diretamente dentro do elemento pai
+*/

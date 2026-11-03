@@ -1,14 +1,18 @@
 @charset "UTF-8";
-h1{
-    background-color: lightgrey;
-    text-align: center;
-    border: 1px solid black;
-    height: 200px;
-    width: 200px;
-    display: inline-block;
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
 }
-h1:hover{
-    background-color: yellow;
+a:visited{
+    color: darkred;
+}
+a:hover{
+    text-decoration: underline;
+    color: black;
+}
+a:active{
+    color: yellow;
 }
 /* uma pseudo-class deve estar relacionado a um elemento, class ou id*/
 /*
@@ -63,35 +67,4 @@ h1:hover{
 Linguísticas: :lang() (seleciona com base no idioma, ex: :lang(pt)), :dir() (direção do texto: ltr ou rtl)
 Shadow DOM: :host, :host(), :host-context(), :slotted()
 Visão de Transição / Mídia: :fullscreen, :modal, :popover-open
-*/
-
-/*
-border: explicar dps 
-height: explicar dps
-widht: explicar dps
-Principais valores da propriedade display
-block (Bloco)
-• Comportamento: Ocupa 100% da largura disponível da linha e sempre começa em uma nova linha.
-• Exemplos de tags padrão: <div>, <p>, <h1> a <h6>, <header>, <footer>, <ul>.
-• Particularidades: Permite definir larguras (width) e alturas (height) explicitamente.
-
-inline (Em linha)
-• Comportamento: Ocupa apenas o espaço necessário para o seu conteúdo e fica posicionado lado a lado com outros elementos inline.
-• Exemplos de tags padrão: <span>, <a>, <img>, <strong>, <em>.
-• Particularidades: Não aceita a definição de width ou height, e as margens verticais (margin-top e margin-bottom) não funcionam como esperado.
-inline-block
-• Comportamento: Fica em linha (lado a lado com outros elementos), mas permite definir width, height e espaçamentos (margins e paddings) como um elemento em bloco.
-
-4. none
-• Comportamento: O elemento é completamente removido da tela e da árvore de acessibilidade (fica invisível e ignorado por leitores de tela).
-• Diferença: É diferente de visibility: hidden, que apenas oculta o elemento, mas mantém o espaço ocupado por ele na página.
-
-5. flex (Flexbox)
-• Comportamento: Transforma o elemento em um contêiner flexível, permitindo alinhar, distribuir e dimensionar itens facilmente em uma única direção (linha ou coluna).
-
-6. grid (Grid Layout)
-• Comportamento: Transforma o elemento em um contêiner de grade bidimensional (linhas e colunas), ideal para layouts de página complexos.
-
-7. contents
-• Comportamento: Faz com que a caixa do próprio elemento desapareça, fazendo com que os filhos diretos dele passem a se comportar como se estivessem diretamente dentro do elemento pai
 */

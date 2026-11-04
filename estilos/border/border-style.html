@@ -5,26 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bordas</title>
     <style>
+        body{
+            border-style: solid;
+        }
         h1{
-            border-style: ridge;
+            border-style: dashed solid;
         }
         h2{
-            border-style: dashed;
+            border-style: solid dotted dashed;
         }
         p{
-            border-style: solid;
+            border-style: none solid double dashed;
         }
         /*
         Define o tipo de linha da borda. Os principais valores são:
-        solid: Linha contínua.
-        dashed: Linha tracejada.
-        dotted: Linha pontilhada.
-        double: Linha dupla.
-        groove:: Efeito 3D entalhado.
-        ridge: Efeito 3D em relevo.
-        inset: Efeito 3D de profundidade.
-        outset: Efeito 3D saltado.
-        none / hidden: Sem borda.
+        none: Valor padrão. Nenhuma borda é exibida.
+        hidden: Oculta a borda (usado principalmente para resolver conflitos em tabelas).
+        solid: Uma linha contínua e sólida.
+        dashed: Uma linha tracejada.
+        dotted: Uma linha pontilhada.
+        double: Duas linhas paralelas sólidas (requer pelo menos 3px de largura para o efeito aparecer).
+        groove: Uma borda entalhada em 3D (o efeito depende dos valores de cor).
+        ridge: Uma borda em relevo 3D.
+        inset: Faz o elemento parecer "afundado" na página.
+        outset: Faz o elemento parecer "saltado" (em relevo) na página.
+
+        1 valor: Aplica o mesmo estilo em todos os lados.
+        2 valores: O primeiro controla superior/inferior e o segundo controla esquerda/direita.
+        3 valores: O primeiro controla superior, o segundo as laterais e o terceiro o lado inferior.
+        4 valores: Controla cada lado individualmente (superior, direita, inferior, esquerda).
+
+        Propriedades Individuais:
+        p{
+            border-top-style: none;
+            border-right-style: solid;
+            border-bottom-style: double;
+            border-left-style: dashed;
+        }
         */
     </style>
 </head>

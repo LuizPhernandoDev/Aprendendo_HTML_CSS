@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+    <style>
+        #v1{
+            border: 1px solid;
+            padding: 10px;
+        }
+        #v2{
+            border: 1px solid;
+            padding: 10px 20px;
+        }
+        #v3{
+            border: 1px solid;
+            padding: 10px 20px 30px;
+        }
+        #v4{
+            border: 1px solid;
+            padding: 10px 20px 30px 40px;
+        }
+        /*
+        Define o espaçamento interno de todos os quatro lados de um elemento simultaneamente, podendo receber de um a quatro valores para controlar cada direção de forma abreviada
+
+        1 valor: Aplica a mesma medida para os quatro lados simultaneamente.
+        2 valores: O primeiro valor cuida do eixo vertical e o segundo do eixo horizontal.
+        3 valores: O primeiro valor define o topo, o segundo as laterais e o terceiro a base.
+        4 valores: Define cada lado individualmente. Para memorizar a ordem, pense no movimento dos ponteiros de um relógio começando pelo topo
+        
+        Valores Aceitos
+        auto: O elemento expande ou encolhe para se ajustar perfeitamente ao seu conteúdo.
+        Comprimento (length): valores em pixels (px), rem (rem), em (em), vh, vw, etc. (Não aceita valores negativos).
+        Porcentagem (%): calculada com base na largura do bloco pai.
+        Palavras-chave: initial (retorna ao valor padrão) ou inherit (herda do elemento pai)
+        */
+    </style>
+</head>
+<body>
+    <p id="v1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ad fuga facilis non laudantium ex ducimus numquam neque incidunt eaque unde, veniam ab quod pariatur adipisci. Reiciendis, enim nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi eius nemo nobis veniam odio nam debitis molestiae esse consequuntur dolorem iste, adipisci cum expedita perspiciatis deserunt iure libero recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum repellat, cumque voluptatibus animi assumenda autem obcaecati doloremque ipsam perspiciatis aliquid atque. Similique vero commodi ab rerum quisquam porro nostrum!</p>
+    <p id="v2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ad fuga facilis non laudantium ex ducimus numquam neque incidunt eaque unde, veniam ab quod pariatur adipisci. Reiciendis, enim nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi eius nemo nobis veniam odio nam debitis molestiae esse consequuntur dolorem iste, adipisci cum expedita perspiciatis deserunt iure libero recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum repellat, cumque voluptatibus animi assumenda autem obcaecati doloremque ipsam perspiciatis aliquid atque. Similique vero commodi ab rerum quisquam porro nostrum!</p>
+    <p id="v3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ad fuga facilis non laudantium ex ducimus numquam neque incidunt eaque unde, veniam ab quod pariatur adipisci. Reiciendis, enim nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi eius nemo nobis veniam odio nam debitis molestiae esse consequuntur dolorem iste, adipisci cum expedita perspiciatis deserunt iure libero recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum repellat, cumque voluptatibus animi assumenda autem obcaecati doloremque ipsam perspiciatis aliquid atque. Similique vero commodi ab rerum quisquam porro nostrum!</p>
+    <p id="v4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero sit ad fuga facilis non laudantium ex ducimus numquam neque incidunt eaque unde, veniam ab quod pariatur adipisci. Reiciendis, enim nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit nisi eius nemo nobis veniam odio nam debitis molestiae esse consequuntur dolorem iste, adipisci cum expedita perspiciatis deserunt iure libero recusandae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum repellat, cumque voluptatibus animi assumenda autem obcaecati doloremque ipsam perspiciatis aliquid atque. Similique vero commodi ab rerum quisquam porro nostrum!</p>
+</body>
+</html>

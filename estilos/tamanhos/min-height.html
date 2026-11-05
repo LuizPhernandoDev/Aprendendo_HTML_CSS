@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos</title>
+    <style>
+        h1{
+            background-color: blue;
+            min-width: 2px;
+        }
+        /*
+        define a altura mínima que um elemento deve ter. Diferente do height fixo (que trava o tamanho do elemento), o min-height permite que a caixa cresça verticalmente se o conteúdo interno precisar de mais espaço
+
+        Se o texto for curto: O elemento mantém a altura padrão estipulada pelo min-height.
+        Se o texto for longo (ou a tela do celular for estreita): O elemento estica automaticamente para baixo, acomodando todo o texto de forma segura
+
+        valores aceitos:
+        auto: O elemento expande ou encolhe para se ajustar perfeitamente ao seu conteúdo interno.
+        Fixo (px, rem, em): Define um tamanho rígido que não muda de acordo com o conteúdo ou o tamanho da tela.
+        Porcentagem (%): O elemento assume uma fração da altura do seu elemento pai. Se o pai não tiver altura definida, o valor falha e age como auto.
+        Viewport (vh): Baseia-se na altura da janela do navegador. 100vh preenche toda a altura da tela visible.
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos</title>
+    <style>
+        h1{
+            background-color: blue;
+            min-width: 2px;
+        }
+        /*
+        define a largura mínima que um elemento pode ter no eixo horizontal. Ela funciona como um "piso" de segurança: o elemento pode esticar o quanto for necessário, mas nunca vai encolher menos do que o valor determinado
+
+        Em telas grandes: O elemento flui normalmente, podendo ocupar 100% da largura disponível ou o tamanho do conteúdo.
+        Em telas pequenas (celulares): Quando a tela diminui e atinge os 300px, o elemento trava nesse tamanho e se recusa a encolher mais. Se a tela continuar diminuindo, o navegador cria uma barra de rolagem horizontal para proteger o conteúdo
+
+        valores aceitos:
+        auto: O elemento expande ou encolhe para se ajustar perfeitamente ao seu conteúdo interno.
+        Fixo (px, rem, em): Define um tamanho rígido que não muda de acordo com o conteúdo ou o tamanho da tela.
+        Porcentagem (%): O elemento assume uma fração da altura do seu elemento pai. Se o pai não tiver altura definida, o valor falha e age como auto.
+        Viewport (vh): Baseia-se na altura da janela do navegador. 100vh preenche toda a altura da tela visible.
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanhos</title>
+    <style>
+        h1{
+            background-color: blue;
+            max-height: 300px;
+        }
+        /*
+        define a altura máxima que um elemento pode atingir. Ela funciona como um "teto" de segurança: o elemento pode ser menor do que o valor definido (ajustando-se ao conteúdo), mas nunca ultrapassará esse limite vertical
+
+        Se o conteúdo for pequeno: O elemento terá apenas o tamanho necessário para cobrir esse conteúdo (comportamento de height: auto).
+        Se o conteúdo crescer demais: O elemento trava exatamente em 300px
+
+        valores aceitos:
+        auto: O elemento expande ou encolhe para se ajustar perfeitamente ao seu conteúdo interno.
+        Fixo (px, rem, em): Define um tamanho rígido que não muda de acordo com o conteúdo ou o tamanho da tela.
+        Porcentagem (%): O elemento assume uma fração da altura do seu elemento pai. Se o pai não tiver altura definida, o valor falha e age como auto.
+        Viewport (vh): Baseia-se na altura da janela do navegador. 100vh preenche toda a altura da tela visible.
+        */
+    </style>
+</head>
+<body>
+    <h1>Hello world!</h1>
+</body>
+</html>

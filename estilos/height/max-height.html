@@ -16,10 +16,21 @@
         Se o conteúdo crescer demais: O elemento trava exatamente em 300px
 
         valores aceitos:
-        auto: O elemento expande ou encolhe para se ajustar perfeitamente ao seu conteúdo interno.
-        Fixo (px, rem, em): Define um tamanho rígido que não muda de acordo com o conteúdo ou o tamanho da tela.
-        Porcentagem (%): O elemento assume uma fração da altura do seu elemento pai. Se o pai não tiver altura definida, o valor falha e age como auto.
-        Viewport (vh): Baseia-se na altura da janela do navegador. 100vh preenche toda a altura da tela visible.
+        auto: O valor padrão. O navegador calcula a altura automaticamente com base no conteúdo interno.
+        fit-content: Ajusta a altura exatamente ao tamanho do conteúdo, respeitando o espaço disponível.
+        max-content: Força a altura ideal para o conteúdo caber sem nenhuma quebra de linha ou restrição (mesmo que transborde o elemento pai).
+        min-content: Define a altura com base no menor tamanho possível que o conteúdo exige (por exemplo, a maior palavra ou o menor elemento interno).
+        Pixels (px): Unidade estática comum (ex: height: 250px;).
+        Relativos à fonte (em, rem): Escala com o tamanho do texto (ex: height: 15rem;).
+        Relativos à tela do usuário (Viewport):
+            vh / vw: Porcentagem da altura/largura total da janela (ex: height: 100vh; ocupa a tela inteira).
+            lvh / svh / dvh: Variações modernas para lidar com barras de navegação dinâmicas em celulares (Large, Small e Dynamic Viewport Height).
+        %: Define a altura como uma porcentagem da altura do elemento pai.
+	        Nota importante: Para funcionar, o elemento pai precisa ter uma altura explicitamente definida (em px, vh, etc.), caso contrário, o valor padrão auto será aplicado.
+        inherit: Herda o valor de altura do elemento pai.
+        initial: Define a altura para o seu valor padrão de fábrica do CSS (auto).
+        revert: Reseta a altura para o comportamento padrão do navegador (User Agent).
+        unset: Combina inherit ou initial dependendo se a propriedade é herdada naturalmente ou não (no caso de height, age como initial).
         */
     </style>
 </head>

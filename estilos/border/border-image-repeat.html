@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 33.33%;
+            border-image-repeat: stretch;
+        }
+        h1{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 33.33%;
+            border-image-repeat: repeat;
+        }
+        h2{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 33.33%;
+            border-image-repeat: round;
+        }
+        p{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 33.33%;
+            border-image-repeat: space;
+        }
+        /*
+        define como as fatias das quatro bordas laterais (topo, direita, baixo e esquerda) devem se comportar para preencher o espaço entre os cantos do elemento. Enquanto os cantos permanecem fixos nas pontas, as laterais precisam ser esticadas ou repetidas conforme o tamanho da caixa.
+
+        Valores Principais:
+        stretch (Padrão): Estica a fatia lateral uma única vez para cobrir todo o comprimento da borda, o que pode distorcer padrões detalhados.
+        repeat: Repete a fatia em mosaico (lado a lado) sem redimensioná-la, podendo cortar o desenho pela metade perto dos cantos se o espaço não for um múltiplo exato.
+        round: Repete a fatia em mosaico e ajusta levemente sua largura ou altura para que caiba um número inteiro de repetições, evitando cortes bruscos nas emendas.
+        space: Repete a fatia em mosaico sem cortar nem distorcer o desenho, distribuindo espaços transparentes iguais entre cada repetição caso sobre espaço.
+
+        Use stretch para gradientes lineares ou bordas com cores lisas e texturas uniformes onde a distorção não é visível.
+        Use round para padrões geométricos, correntes, estrelas ou ornamentos que precisam se encaixar perfeitamente de ponta a ponta sem cortes.
+
+        1 Valor (Horizontal). Controla exclusivamente as bordas do topo e de baixo.
+        2 Valorores (Vertical). Controla exclusivamente as bordas da esquerda e da direita.
+
+        Comportamento do miolo. Quando você usa a palavra-chave fill no border-image-slice, a região central da imagem também obedece ao border-image-repeat: ela segue o 1º valor na largura (horizontal) e o 2º valor na altura (vertical).
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de título</h1>
+    <h2>Exemplo de subtítulo</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est unde accusamus, natus aspernatur rem esse eum architecto deleniti dolorum recusandae eveniet ipsa voluptatibus repellendus veniam possimus cum laboriosam assumenda ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui aliquid magnam perferendis ullam quae quas nihil fugiat exercitationem suscipit? Facere, iure quibusdam ex dignissimos illo magni consequuntur quaerat rerum.
+    </p>
+    <h2>Outro exemplo de subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint consectetur quasi, dignissimos nisi ex quidem temporibus voluptatem, soluta impedit exercitationem magnam, facere neque incidunt tenetur doloribus libero tempora cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit architecto esse. Fugiat asperiores id placeat sed rem nostrum, accusantium dolorum. Exercitationem libero quos nemo quibusdam qui dicta sunt quas?
+    </p>
+</body>
+</html>

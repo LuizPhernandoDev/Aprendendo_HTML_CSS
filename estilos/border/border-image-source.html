@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+        }
+        h1{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+        }
+        h2{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+        }
+        p{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+        }
+        /*
+        define a imagem ou o gradiente que será usado no lugar da borda padrão de um elemento. Por padrão, seu valor é none, o que faz o navegador exibir o estilo de borda normal definido por border-style
+
+        Valores Principais:
+        Valor none (Padrão). Nenhuma imagem é carregada e a borda sólida ou tracejada comum é exibida.
+        Função url(). Carrega um arquivo de imagem externo (PNG, JPG, SVG ou WebP) pelo seu caminho relativo ou absoluto.
+        Gradientes CSS. Aceita funções como linear-gradient(), radial-gradient() e conic-gradient() para criar bordas degradê sem arquivos externos.
+        Palavras-chave globais. Suporta valores como inherit, initial e unset para controlar a cascata do CSS.
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de título</h1>
+    <h2>Exemplo de subtítulo</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est unde accusamus, natus aspernatur rem esse eum architecto deleniti dolorum recusandae eveniet ipsa voluptatibus repellendus veniam possimus cum laboriosam assumenda ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui aliquid magnam perferendis ullam quae quas nihil fugiat exercitationem suscipit? Facere, iure quibusdam ex dignissimos illo magni consequuntur quaerat rerum.
+    </p>
+    <h2>Outro exemplo de subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint consectetur quasi, dignissimos nisi ex quidem temporibus voluptatem, soluta impedit exercitationem magnam, facere neque incidunt tenetur doloribus libero tempora cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit architecto esse. Fugiat asperiores id placeat sed rem nostrum, accusantium dolorum. Exercitationem libero quos nemo quibusdam qui dicta sunt quas?
+    </p>
+</body>
+</html>

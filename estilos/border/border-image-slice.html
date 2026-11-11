@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 30;
+        }
+        h1{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 20 40;
+        }
+        h2{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 10 20 30;
+        }
+        p{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 10 20 40;
+        }
+        /*
+        divide a imagem definida em border-image-source em nove regiões (quatro cantos, quatro bordas laterais e uma área central). Esse fatiamento funciona como um jogo da velha, permitindo que os cantos mantenham suas proporções originais enquanto as laterais se esticam ou se repetem para preencher o tamanho do elemento.
+
+        Valores Principais:
+        Números sem unidade. Representam pixels em imagens rasterizadas (PNG, JPG) ou coordenadas em imagens vetoriais (SVG). Escreva apenas 30 e nunca 30px.
+        Porcentagens (%). Calculam o corte com base na largura e altura totais da imagem (ex: 25%).
+        Palavra-chave fill. Mantém a região central da imagem e a desenha como plano de fundo atrás do conteúdo do elemento.
+
+        1 valor: Aplica o mesmo corte de 30 nos quatro lados (topo, direita, baixo e esquerda).
+        2 valores: O primeiro valor corta topo e baixo (20); o segundo corta esquerda e direita (40).
+        3 valores: O primeiro corta o topo (10), o segundo corta esquerda e direita (20) e o terceiro corta baixo (30).
+        4 valores: Aplica os cortes na ordem horária: topo (10), direita (20), baixo (30) e esquerda (40).
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de título</h1>
+    <h2>Exemplo de subtítulo</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est unde accusamus, natus aspernatur rem esse eum architecto deleniti dolorum recusandae eveniet ipsa voluptatibus repellendus veniam possimus cum laboriosam assumenda ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui aliquid magnam perferendis ullam quae quas nihil fugiat exercitationem suscipit? Facere, iure quibusdam ex dignissimos illo magni consequuntur quaerat rerum.
+    </p>
+    <h2>Outro exemplo de subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint consectetur quasi, dignissimos nisi ex quidem temporibus voluptatem, soluta impedit exercitationem magnam, facere neque incidunt tenetur doloribus libero tempora cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit architecto esse. Fugiat asperiores id placeat sed rem nostrum, accusantium dolorum. Exercitationem libero quos nemo quibusdam qui dicta sunt quas?
+    </p>
+</body>
+</html>

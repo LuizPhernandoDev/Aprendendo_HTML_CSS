@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas</title>
+    <style>
+        body{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 33.33%;
+            border-image-width: 1;
+            /* Padão*/
+        }
+        h1{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 33.33%;
+            border-image-width: 1.5;
+            /* Multiplica os 20px por 1.5 (a imagem terá 30px e invadirá 10px para dentro) */
+        }
+        h2{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: url('borda.png');
+            border-image-slice: 33.33%;
+            border-image-width: 40px 15px;
+            /* Define tamanhos exatos: 40px no topo/baixo e 15px nas laterais */
+        }
+        p{
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image-source: linear-gradient(to right, gold, darkorange, red);
+            border-image-slice: 33.33%;
+            border-image-width: auto;
+            /* Usa o tamanho exato da fatia (33.33%) */
+        }
+        /*
+        define a espessura visual com que a imagem da borda será desenhada na tela. Por padrão, seu valor é 1, o que faz com que a largura da imagem acompanhe exatamente o tamanho definido na propriedade border-width do elemento.
+        Controla apenas o tamanho da imagem da moldura. Se ela for maior que o border-width, a imagem invade a área interna do elemento (passando por trás do texto e do padding) sem empurrar o layout.
+
+        Valores Principais:
+        Número sem unidade (Multiplicador). Multiplica o valor atual do border-width (ex: se border-width for 10px e border-image-width for 2, a moldura terá 20px de espessura).
+        Medidas de comprimento (px, em, rem). Define um tamanho fixo e absoluto para a moldura, ignorando o border-width (ex: 25px).
+        Porcentagens (%). Calcula a espessura com base na largura total (para bordas esquerda/direita) e altura total (para topo/baixo) da área da borda do elemento.
+        Palavra-chave auto. Faz a espessura da borda adotar exatamente o tamanho original do corte definido em border-image-slice.
+
+
+        1 valor: Aplica o mesmo tamanho nos quatro lados
+        2 valores: O primeiro define topo e baixo; o segundo define esquerda e direita (10px).
+        3 valores: O primeiro aplica no topo, o segundo na esquerda e direita e o terceiro em baixo.
+        4 valores: Aplica na ordem horária: topo, direita, baixo e esquerda.
+        */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de título</h1>
+    <h2>Exemplo de subtítulo</h2>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est unde accusamus, natus aspernatur rem esse eum architecto deleniti dolorum recusandae eveniet ipsa voluptatibus repellendus veniam possimus cum laboriosam assumenda ex! Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat qui aliquid magnam perferendis ullam quae quas nihil fugiat exercitationem suscipit? Facere, iure quibusdam ex dignissimos illo magni consequuntur quaerat rerum.
+    </p>
+    <h2>Outro exemplo de subtítulo</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint consectetur quasi, dignissimos nisi ex quidem temporibus voluptatem, soluta impedit exercitationem magnam, facere neque incidunt tenetur doloribus libero tempora cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. A reprehenderit architecto esse. Fugiat asperiores id placeat sed rem nostrum, accusantium dolorum. Exercitationem libero quos nemo quibusdam qui dicta sunt quas?
+    </p>
+</body>
+</html>

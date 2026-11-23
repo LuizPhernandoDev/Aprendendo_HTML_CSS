@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* 1. Reset global: padroniza estilos de todos os elementos */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 2. Estilos base no body: herdados pelos elementos da página */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        color: #222222;
+        line-height: 1.6;
+        padding: 24px;
+    }
+
+    /* 3. Regras globais por tag: aplicam o padrão a todas as ocorrências */
+    h1 {
+        margin-bottom: 12px;
+        color: #111111;
+    }
+
+    p {
+        margin-bottom: 16px;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    
+  </style>
+</head>
+<body>
+  <h1>Título Principal</h1>
+  <p>Este parágrafo herda a fonte e a cor do <code>body</code>, e recebe a margem definida na regra global da tag <code>p</code>.</p>
+  <a href="#">Link com estilo global</a>
+</body>
+</html>

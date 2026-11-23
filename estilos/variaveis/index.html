@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    /* 1. Declaração das variáveis */
+    :root {
+      --cor-principal: #2563eb;
+      --espaco: 16px;
+    }
+
+    /* 2. Uso com var() */
+    div {
+      border: 2px solid var(--cor-principal);
+      padding: var(--espaco);
+    }
+
+    p {
+      background-color: var(--cor-principal);
+      color: #ffffff;
+      border: none;
+      padding: var(--espaco);
+      margin-top: var(--espaco);
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Exemplo enxuto usando duas variáveis.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio magni molestiae, obcaecati officiis amet sit laborum. Veritatis asperiores ipsa laborum molestiae dolorum totam et, pariatur ipsam provident praesentium tenetur?</p>
+  </div>
+</body>
+</html>
